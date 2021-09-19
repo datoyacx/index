@@ -7,4 +7,5 @@ export interface BlogDataContent {
     status: ContentStatus;
     title: string;
     type: ContentType;
+    main: string;
 }
