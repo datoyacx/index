@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+	<title>toya</title>
+</svelte:head>
+
+<script lang="ts">
+	export const profile: string = 'https://avatars.githubusercontent.com/u/53964388';
+</script>
+
+<h1>toya</h1>
+<img src="{profile}" alt="toya profile">
+<p>👁️ 👃 👁️ pipo pipo</p>
