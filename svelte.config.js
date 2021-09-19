@@ -14,6 +14,8 @@ const config = {
 			assets: 'build',
 			fallback: null
 		}),
+		router: true,
+		ssr: false,
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	}
