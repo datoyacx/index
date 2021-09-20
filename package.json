@@ -29,6 +29,8 @@
   "type": "module",
   "dependencies": {
     "@types/marked": "^3.0.1",
-    "marked": "^3.0.4"
+    "marked": "^3.0.4",
+    "node-sass": "^6.0.1",
+    "sass": "^1.41.1"
   }
 }
