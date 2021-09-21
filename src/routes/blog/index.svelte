@@ -23,7 +23,7 @@
 
 <div class="page blog">
 	<div class="banner">
-		<img src="/image/blog.gif" alt="blog">
+		<img src="/image/default.gif" alt="blog">
 	</div>
 	<Menu/>
 	<h1 class="title">blog</h1>

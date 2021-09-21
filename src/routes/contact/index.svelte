@@ -8,7 +8,7 @@
 
 <div class="page contact">
 	<div class="banner">
-		<img src="/image/contact.gif" alt="contact">
+		<img src="/image/default.gif" alt="contact">
 	</div>
 	<Menu/>
 	<h1 class="title">contact</h1>

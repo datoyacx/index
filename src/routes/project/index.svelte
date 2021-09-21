@@ -8,7 +8,7 @@
 
 <div class="page project">
 	<div class="banner">
-		<img src="/image/project.gif" alt="project">
+		<img src="/image/default.gif" alt="project">
 	</div>
 	<Menu/>
 	<h1 class="title">project</h1>
