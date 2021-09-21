@@ -38,7 +38,7 @@
 
 <div class="page blog-detail">
 	<div class="banner">
-		<img src="/image/reading.gif" alt="reading">
+		<img src="/image/default.gif" alt="reading">
 	</div>
 	<Menu/>
 	{#await posts}
