@@ -13,6 +13,7 @@
 </svelte:head>
 
 <script lang="ts">
+	import Menu from '$lib/components/Menu.svelte';
 	import type { BlogData } from '$lib/interface/blogData';
 	import marked from 'marked';
 	
@@ -35,17 +36,25 @@
     export const posts: Promise<BlogData> = getContent(code);
 </script>
 
+<div class="page blog-detail">
+	<div class="banner">
+		<img src="/image/reading.gif" alt="reading">
+	</div>
+	<Menu/>
+	{#await posts}
+		<h1 class="title">blog</h1>
+		<p>loading...</p>
+	{:then data}
+		{#if data}
+			<h1 class="title">{data.content.title}</h1>
 
-{#await posts}
-	<p>loading...</p>
-{:then data}
-	{#if data}
-		<h1>{data.content.title}</h1>
-
-		{@html marked(data.content.main)}
-	{:else}
-		post not found
-	{/if}
-{:catch error}
-	{error}
-{/await}
+			{@html marked(data.content.main)}
+		{:else}
+			<h1 class="title">sadkek...</h1>
+			<p>post not found</p>
+		{/if}
+	{:catch error}
+		{error}
+	{/await}
+	<p class="copyright">&copy; 2021</p>
+</div>
