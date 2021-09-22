@@ -60,6 +60,12 @@ body {
         width: 100%;
         background: $semi-dark;
     }
+
+    .content {
+        ul {
+            padding-left: 25px;
+        }
+    }
 }
 
 .home {
