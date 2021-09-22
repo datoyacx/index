@@ -14,7 +14,7 @@
 	<div class="content">
 		<h1 class="title">contact</h1>
 		<ul>
-			<li><a href="https://d.ba-ka.org">discord</a></li>
+			<li><a href="https://ba-ka.org/discord">discord</a></li>
 			<li><a href="mailto:datoyacx@outlook.jp">e-mail</a></li>
 			<li><a href="https://ah0.ba-ka.org/user/datoyacx">ah0 project</a></li>
 			<li><a href="https://github.com/datoyacx">github</a></li>
