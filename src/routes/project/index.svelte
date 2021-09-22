@@ -11,7 +11,9 @@
 		<img src="/image/default.gif" alt="project">
 	</div>
 	<Menu/>
-	<h1 class="title">project</h1>
-	<p>coming soon!</p>
+	<div class="content">
+		<h1 class="title">project</h1>
+		<p>coming soon!</p>
+	</div>
 	<p class="copyright">&copy; 2021</p>
 </div>

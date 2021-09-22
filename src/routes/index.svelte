@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>toya</title>
+	<title>&#12488;&#12516;</title>
 </svelte:head>
 
 <script lang="ts">
@@ -9,7 +9,7 @@
 </script>
 
 <div class="page home">
-	<h1 class="title">toya</h1>
+	<h1 class="title">&#12488;&#12516;</h1>
 	<p class="description">a lazy guy who want to sleep and write code in isekai</p>
 	<img src="{profile}" alt="toya profile">
 	<Menu/>
