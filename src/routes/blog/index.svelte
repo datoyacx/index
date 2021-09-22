@@ -26,22 +26,24 @@
 		<img src="/image/default.gif" alt="blog">
 	</div>
 	<Menu/>
-	<h1 class="title">blog</h1>
-	{#await posts}
-		<p>loading...</p>
-	{:then data}
-		{#if data}
-			{#each data.rows as post}
-				<BlogCard
-					code={post.content.code}
-					title={post.content.title}
-				/>
-			{/each}
-		{:else}
-			post not found
-		{/if}
-	{:catch error}
-		{error}
-	{/await}
+	<div class="content">
+		<h1 class="title">blog</h1>
+		{#await posts}
+			<p>loading...</p>
+		{:then data}
+			{#if data}
+				{#each data.rows as post}
+					<BlogCard
+						code={post.content.code}
+						title={post.content.title}
+					/>
+				{/each}
+			{:else}
+				post not found
+			{/if}
+		{:catch error}
+			{error}
+		{/await}
+	</div>
 	<p class="copyright">&copy; 2021</p>
 </div>

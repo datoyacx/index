@@ -41,6 +41,7 @@
 		<img src="/image/default.gif" alt="reading">
 	</div>
 	<Menu/>
+	<div class="content">
 	{#await posts}
 		<h1 class="title">blog</h1>
 		<p>loading...</p>
@@ -56,5 +57,6 @@
 	{:catch error}
 		{error}
 	{/await}
+	</div>
 	<p class="copyright">&copy; 2021</p>
 </div>
