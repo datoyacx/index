@@ -142,6 +142,7 @@ nav ul {
 @media only screen and (max-width: 360px) {
     .page {
         margin: 0;
+        max-height: 100vh;
     }
     .home {
         img {
