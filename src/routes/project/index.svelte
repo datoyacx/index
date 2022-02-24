@@ -20,10 +20,11 @@
 				<a href="https://www.roblox.com/games/5253868577/GHOST-ID-Project">ghost id project</a>
 				<ul>
 					<li>using roblox studio</li>
+					<li>full-stack developer</li>
 					<li>scripting</li>
 					<li>animator</li>
 					<li>ui/ux</li>
-					<li>animation (simple)</li>
+					<li>but there a map created by community</li>
 				</ul>
 			</li>
 		</ul>
