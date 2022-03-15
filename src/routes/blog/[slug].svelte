@@ -18,14 +18,14 @@
 	import marked from 'marked';
 	
 	async function getContent(code: number) {
-		const url = `https://c0re.ba-ka.org/v1/content?code=${ code }`;
+		const url = `https://c.ba-ka.org/api/v1/kami?id=${ code }`;
 		const response = await fetch(url);
     	let responseJSON = await response.json();
 		
 		if (response.ok) {
-			const content: BlogData = responseJSON['result'];
+			const content: BlogData = responseJSON;
 			if (content) {
-				title = `blog - ${content.content.title}`;
+				title = `blog - ${content.title}`;
 			}
 			return content;
 		}
@@ -47,9 +47,9 @@
 		<p>loading...</p>
 	{:then data}
 		{#if data}
-			<h1 class="title">{data.content.title}</h1>
+			<h1 class="title">{data.title}</h1>
 
-			{@html marked(data.content.main)}
+			{@html marked(data.content)}
 		{:else}
 			<h1 class="title">sadkek...</h1>
 			<p>post not found</p>

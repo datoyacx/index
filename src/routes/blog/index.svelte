@@ -8,12 +8,12 @@
 	import BlogCard from '$lib/components/BlogCard.svelte';
 	
 	async function getContent() {
-		const url = 'https://c0re.ba-ka.org/v1/content?userid=4&limit=-1';
+		const url = 'https://c.ba-ka.org/api/v1/kami?userid=61f3b1500c22a792c78228ee';
 		const response = await fetch(url);
     	let responseJSON = await response.json();
 		
 		if (response.ok) {
-			const content: Blog = responseJSON['result'];
+			const content: Blog = responseJSON;
 			return content;
 		}
 	}
@@ -32,10 +32,10 @@
 			<p>loading...</p>
 		{:then data}
 			{#if data}
-				{#each data.rows as post}
+				{#each data.row as post}
 					<BlogCard
-						code={post.content.code}
-						title={post.content.title}
+						code={post.id}
+						title={post.title}
 					/>
 				{/each}
 			{:else}
