@@ -1,7 +1,12 @@
-import type { BlogDataContent } from "./blogDataContent";
-import type { BlogDataUser } from './blogDataUser';
+import type { BlogDataAuthor } from './blogDataAuthor';
 
 export interface BlogData {
-    content: BlogDataContent;
-    user: BlogDataUser;
+    id: string;
+    title: string;
+    excerpt: string;
+    status: string;
+    content?: string;
+    update_at: number;
+    create_at: number;
+    author: BlogDataAuthor;
 }
