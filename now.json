@@ -2,5 +2,6 @@
     "redirects": [
         { "source": "/project", "destination": "https://b.ba-ka.org/works", "permanent": true },
         { "source": "/contact", "destination": "https://b.ba-ka.org/contact", "permanent": true }
-    ]
+    ],
+    "rewrites": [ { "source": "/(.*)", "destination": "/index.html" } ]
 }
