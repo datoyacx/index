@@ -1,1 +1,5 @@
-page not found
+<script lang="ts">
+	import Home from './index.svelte';
+</script>
+
+<Home/>
