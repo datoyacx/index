@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import Menu from '$lib/components/Menu.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	export const profile: string = 'https://avatars.githubusercontent.com/u/53964388';
 </script>
@@ -13,5 +14,5 @@
 	<p class="description">a lazy guy who want to sleep and write code in isekai</p>
 	<img src="{profile}" alt="toya profile">
 	<Menu/>
-	<p class="copyright">&copy; 2021</p>
+	<Footer/>
 </div>

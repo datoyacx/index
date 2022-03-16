@@ -15,6 +15,7 @@
 <script lang="ts">
 	import Menu from '$lib/components/Menu.svelte';
 	import type { BlogData } from '$lib/interface/blogData';
+	import Footer from '$lib/components/Footer.svelte';
 	import marked from 'marked';
 	
 	async function getContent(code: number) {
@@ -58,5 +59,5 @@
 		{error}
 	{/await}
 	</div>
-	<p class="copyright">&copy; 2021</p>
+	<Footer/>
 </div>

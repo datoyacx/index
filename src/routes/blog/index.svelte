@@ -5,6 +5,7 @@
 <script lang="ts">
 	import type { Blog } from '$lib/interface/blog';
 	import Menu from '$lib/components/Menu.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import BlogCard from '$lib/components/BlogCard.svelte';
 	
 	async function getContent() {
@@ -45,5 +46,5 @@
 			{error}
 		{/await}
 	</div>
-	<p class="copyright">&copy; 2021</p>
+	<Footer/>
 </div>
