@@ -1,6 +1,6 @@
 export async function get() {
 	return {
-		headers: { location: 'https://b.ba-ka.org/contact' },
+		headers: { location: 'https://hako.work/contact' },
 		status: 301
 	}
 }
